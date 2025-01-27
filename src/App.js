@@ -7,7 +7,7 @@ function App() {
   const handleScroll = () => {
     if (
       window.innerHeight + window.scrollY >=
-      document.documentElement.offsetHeight
+      document.documentElement.offsetHeight - 300
     ) {
       // Use a functional update to avoid stale state
       setPerPage((prevPerPage) => prevPerPage + 10);
